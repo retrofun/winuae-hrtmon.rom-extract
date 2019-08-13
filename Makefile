@@ -3,7 +3,7 @@ CFLAGS ?= -Wall
 OBJECTS = winuae-hrtmon.rom-extract.o hrtmon.rom.o
 TARGET = winuae-hrtmon.rom-extract
 
-HRTMON_ROM_CPP_URL = https://raw.githubusercontent.com/tonioni/WinUAE/master/hrtmon.rom.cpp
+HRTMON_ROM_CPP_URL ?= https://raw.githubusercontent.com/tonioni/WinUAE/master/hrtmon.rom.cpp
 HRTMON_ROM = hrtmon.rom
 
 .PHONY: all clean extract distclean
